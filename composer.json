@@ -1,0 +1,7 @@
+{
+  "name": "intercom/web",
+  "description": "Intercom Web signaling server (Ratchet) minimal integrated with config.txt",
+  "require": {
+    "cboden/ratchet": "^0.4.3"
+  }
+}

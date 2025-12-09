@@ -1,0 +1,15 @@
+[Unit]
+Description=Intercom Signaling Server (Ratchet)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/html/intercom
+ExecStart=/usr/bin/php /var/www/html/intercom/signaling_server.php
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
